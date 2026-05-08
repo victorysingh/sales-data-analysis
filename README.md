@@ -2,9 +2,9 @@
 
 ## Overview
 
-This project analyzes sales data using SQL and Python to extract meaningful business insights such as revenue trends, regional performance, and top-selling products.
+This project analyzes sales data using SQL and Python to extract actionable business insights such as revenue trends, regional performance, and product-level analysis.
 
-## Technologies Used
+## Tech Stack
 
 * Python
 * SQL (SQLite)
@@ -15,26 +15,44 @@ This project analyzes sales data using SQL and Python to extract meaningful busi
 ## Key Features
 
 * Revenue analysis by region
-* Monthly sales trend analysis
-* Top-selling product identification
-* SQL query integration with Python
-* Data visualization and reporting
+* Monthly sales trend visualization
+* Top-performing product identification
+* SQL queries integrated with Python
+* Data cleaning and transformation pipeline
 
-## Insights
+## Key Insights
 
-* Identified high-performing regions based on revenue
-* Analyzed monthly sales growth patterns
-* Compared product performance across categories
+* Identified top-performing regions contributing the highest share of total revenue
+* Observed clear monthly sales trends indicating seasonal variations
+* Found that top 2 products contribute disproportionately to total sales (Pareto pattern)
+* Revenue distribution highlights potential areas for business optimization
 
-## Files
+## Visualizations
 
-* `sales_analysis.ipynb` → Main notebook
+### Revenue by Region
+
+![Revenue by Region](revenue_by_region.png)
+
+### Product Revenue Ranking
+
+![Product Ranking](product_ranking.png)
+
+## Project Structure
+
+* `sales_analysis.ipynb` → Main analysis notebook
 * `sales.csv` → Dataset
 * `sales.db` → SQLite database
-* `revenue_by_region.png` → Visualization
+* `revenue_by_region.png` → Region-wise revenue chart
+* `product_ranking.png` → Product ranking chart
+
+## How to Run
+
+1. Clone the repository
+2. Open `sales_analysis.ipynb` in Jupyter Notebook
+3. Run all cells sequentially
 
 ## Future Improvements
 
-* Interactive dashboard using Streamlit
-* Advanced SQL analytics
-* Predictive sales forecasting
+* Build an interactive dashboard using Streamlit
+* Add advanced SQL queries (window functions, CTEs)
+* Implement predictive modeling for sales forecasting
